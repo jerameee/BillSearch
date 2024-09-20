@@ -3,11 +3,6 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from app.api.search import router as search_router
 
-import sys
-import os
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
