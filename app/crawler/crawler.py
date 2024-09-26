@@ -94,7 +94,10 @@ async def crawl(urls):
 
 # URLs to crawl
 urls = [
-    "https://www.govinfo.gov/rss/bills-enr.xml"
+    "https://www.govinfo.gov/rss/bills-enr.xml",
+    "https://www.govinfo.gov/rss/bills.xml",
+    "https://www.govinfo.gov/rss/plaw.xml",
+    "https://www.govinfo.gov/rss/budget.xml",  
 ]
 
 if __name__ == "__main__":
